@@ -223,24 +223,89 @@ window.DESCUBRIMIENTOS = [
   ]},
 
   { mes: 'Abril 2026', items: [
-    { tipo: 'Cine', n: 27, titulo: 'La peor persona del mundo', anio: '2021', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 28, titulo: 'Los tiburones', anio: '2018', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 29, titulo: 'La soga', anio: '1948', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 30, titulo: 'El asesinato de Jesse James por el cobarde Robert Ford', anio: '2007', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 31, titulo: '3:10 to Yuma', anio: '2007', nota: 3, texto: [] },
-    { tipo: 'Cine', n: 32, titulo: 'Vestida para matar', anio: '1980', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 33, titulo: 'Send Help', anio: '2026', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 34, titulo: 'Darkman', anio: '1990', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 35, titulo: 'Sentimental Value', anio: '2025', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 36, titulo: 'Y tu mamá también', anio: '2001', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 37, titulo: 'Enter the Void', anio: '2009', nota: 3, texto: [] },
-    { tipo: 'Cine', n: 38, titulo: 'Tron: Legacy', anio: '2010', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 39, titulo: 'Street Fighter II: The Animated Movie', anio: '1994', nota: 4, texto: [] },
-    { tipo: 'Música', n: 39, titulo: 'Y después no hablamos más', autor: 'Balta', anio: '2021', nota: 4, texto: [] },
-    { tipo: 'Música', n: 40, titulo: 'Cuando me mires', autor: 'Balta', anio: '2022', nota: 4, texto: [] },
-    { tipo: 'Música', n: 41, titulo: 'Todo antes de irme', autor: 'Balta', anio: '2023', nota: 3, texto: [] },
-    { tipo: 'Música', n: 42, titulo: 'Ayer dijiste mañana', autor: 'Balta', anio: '2026', nota: 4, texto: [] },
-    { tipo: 'Música', n: 43, titulo: 'Moses and the Drones', autor: 'Tom Rowley', anio: '2026', nota: 4, texto: [] },
+    { tipo: 'Cine', n: 27, titulo: 'La peor persona del mundo', anio: '2021', nota: 5, texto: [
+      "Ay cómo me gustan estas películas. Me encanta emocionarme y enamorarme con una historia. Sentir en la piel lo que los protagonistas viven.  Qué sentimiento tan lindo cuando una película te lleva por tantos lados: amor, tristeza y emoción. La protagonista, Julie, es un personaje tan tridimensional y complejo que para el final de la película sentís que la conocés de toda la vida.",
+      "Su mitad final es desgarradora. Todo lo hermoso que viste construirse se desarma en dos soplidos. Hermosa película visualmente y narrativa. Tiene secuencias que me quedaron registradas en mi memoria. Como la de la escapada corriendo en el desayuno o la de sus miedos y sentimientos mientras experimenta con drogas.",
+      "Hermosa película de un director que pinta con mucho futuro. Con una magnífica dirección y visuales. La película me conmovió y logró impactar gratamente. Recomendado para todos los amantes del cine romántico, pero no del tradicional chico conoce a chica. De las historias llenas de agujeros en el corazón. De emociones puras y hermosas. Totalmente recomendada."
+    ] },
+    { tipo: 'Cine', n: 28, titulo: 'Los tiburones', anio: '2018', nota: 4, texto: [
+      "Lucía Garibaldi entrega una película que parece simple a primera vista, pero que esconde una metáfora y acercamiento distinto al pasaje adolescente de una uruguaya.",
+      "Por momentos es muy visceral en la forma de representar nuestro dialecto, interacciones y modo de vida, que se vuelve raro ver representado nuestro país con tanta habilidad.",
+      "El viaje de la protagonista es tan simple como crecer, descubrir tu despertar sexual y conocer un poco más de dónde venís y cómo quisieras ser."
+    ] },
+    { tipo: 'Cine', n: 29, titulo: 'La soga', anio: '1948', nota: 4, texto: [
+      "Por algo se dice que Hitchcock es un genio del género del suspenso. En esta gran película, despliega toda su habilidad detrás de las cámaras para setear un espacio, pocos personajes y con ellos jugar al gato y al ratón.",
+      "Los protagonistas caen por sus propios errores. Grandes actuaciones y gran guion para mostrar las costuras de una clase alta que se cree impune de hacer lo que quiere."
+    ] },
+    { tipo: 'Cine', n: 30, titulo: 'El asesinato de Jesse James por el cobarde Robert Ford', anio: '2007', nota: 5, texto: [
+      "Gran película que nos retrata de una manera ejemplar la búsqueda de la idealización, los mitos y la tragedia de no ser recordado. Construye toda la película lentamente para retratar un Jesse James que se escapa del mito, que es real y que tiene fisuras. Y un Robert Ford que, engañado por su sed de convertirse en su ídolo, termina pudriéndose lentamente hasta que nadie lo recuerda.",
+      "Lo bien que está filmada está película es impresionante. Es tan impactante visualmente que hasta Red Dead Redemption toma inspiración de grandes planos y secuencias para su juego.",
+      "Brad Pitt, como siempre, la rompe. Muestra una actuación muy distinta a lo tradicional del actor. Muestra una faceta muy interesante de un forajido de la ley."
+    ] },
+    { tipo: 'Cine', n: 31, titulo: '3:10 to Yuma', anio: '2007', nota: 3, texto: [
+      "Esperaba más de esta película. Por más que tiene buenos momentos y secuencias de tiroteos, se queda muy corta. La resolución final la siento simple y edulcorada.",
+      "No es una mala película, pero creo que se siente como un blockbuster hollywoodense típico sin intenciones de brindar algo más que solo cumplir. Tiene muchas cosas buenas, como las escenas del protagonista, que lo da todo por su hijo."
+    ] },
+    { tipo: 'Cine', n: 32, titulo: 'Vestida para matar', anio: '1980', nota: 4, texto: [
+      "Brian de Palma no decepciona. En esta película se destila estilo y homenaje a los grandes directores del suspense. La actriz protagónica la noté un poco floja en su actuación.",
+      "Me gustó, cumplió y sorprendió con el final. Un plot twist muy interesante y más para la época en la que fue realizada la película."
+    ] },
+    { tipo: 'Cine', n: 33, titulo: 'Send Help', anio: '2026', nota: 4, texto: [
+      "Sam Raimi vuelve al cine propio con una película sumamente divertida y que critica a todos por igual. Su protagonista tragicómica, con miles de defectos y virtudes. Pero a su vez con un viaje oscuro en su personaje. El jefe, te hace odiarlo desde el primer momento que sale en pantalla, pero hasta Raimi logra que empatices y sientas que el tipo debería escapar de esa isla.",
+      "No decepciona el director que entrega una propuesta única donde la protagonista femenina es más que solo alguien \"ruda\". Es un personaje complejo y con muchas capas. Y lo importante es que la acción, el terror y el humor nunca fallan."
+    ] },
+    { tipo: 'Cine', n: 34, titulo: 'Darkman', anio: '1990', nota: 4, texto: [
+      "Bueno, es un poco rara por momentos. Pero en general es un peliculón de superhéroes cuando el cine de superhéroes estaba comenzando a ser cool. Nuevamente, Raimi entrega una película con un protagonista complejo y con una trama ligera. Lo importante es el desarrollo de la película y sus personajes con varias caras.",
+      "Grandes efectos especiales prácticos y CGI. Para ser de la época, funciona muy bien. Y más con la genialidad de la planeación de muchos de ellos. Los trucos de cámara y los momentos de edición más deslumbrantes de la película.",
+      "Amé el final con el cameo de Bruce Campbell; fue hermoso ese momentazo."
+    ] },
+    { tipo: 'Cine', n: 35, titulo: 'Sentimental Value', anio: '2025', nota: 5, texto: [
+      "Gran película de este director que no erra. Ahora, explora una relación padre e hija que ahonda en las cicatrices del pasado. Los miedos y las experiencias traumáticas no tratadas. Un retrato a una familia muy rota, con cosas para decirse que prefieren ser ocultadas.",
+      "Un acercamiento a la vida de una hija que quiere ser feliz y encontrar su camino, lejos de la aprobación y dependencia de su padre. Un hombre que busca recomponer sus lazos rotos y ser mejor persona.",
+      "Su final es emocional y fuerte al espíritu."
+    ] },
+    { tipo: 'Cine', n: 36, titulo: 'Y tu mamá también', anio: '2001', nota: 5, texto: [
+      "Venía hace años esquivando esta película que todo el mundo me había recomendado. Sentía que tenía que ser buena, algo en mí igual me tiraba para atrás pensando en la posible decepción. Pero no fue así. Es una de las mejores películas mexicanas. Hecha con un nivel de guion excelente. Con unos personajes impecables. Fogosa y contestataria por momentos.",
+      "Destaca más en sus diálogos en off, donde a través del relato muestran la cruda realidad de la situación. No la ensoñación de los jóvenes.",
+      "Tiene un manejo de cámara impresionante y un golpe bajo al final que te deja frío."
+    ] },
+    { tipo: 'Cine', n: 37, titulo: 'Enter the Void', anio: '2009', nota: 3, texto: [
+      "Gaspar Noé. Polémico, transgresor y por momentos pretencioso. En esta sentí que estaba bueno el experimento, pero dura mucho. Creo que la intención está buena. Pero con intenciones no se hacen buenas películas.",
+      "Realmente se excede, es aburrida y cíclica. El mensaje lo podés entender a mitad de película, pero tenés que seguir viendo para ver lo espectacular que se vuelven sus planos. O eso pensaba el director. No es mala. Pero tampoco se puede considerar una obra maestra. Es pesada y aburrida. Entiendo todo su contexto del recurso de las drogas para enlentecer una muerte y recorrer la vida a través de luces. Pero aburre y llega a su punto."
+    ] },
+    { tipo: 'Cine', n: 38, titulo: 'Tron: Legacy', anio: '2010', nota: 4, texto: [
+      "Hace tiempo no la veía completa. Reconozco que no es una joya infravalorada. Sino, más bien es una película que está buena y cumple con sus impresionantes visuales y soundtrack. No más que eso.",
+      "A mí me encanta esta película por temas asociados a la nostalgia y la estética. Juega a favor que los compositores del soundtrack sean Daft Punk y que hagan hasta un cameo en la peli.",
+      "La primera mitad, reconozco que me gusta mucho más que su tercio final. Es más dinámica, con acción y buen desarrollo de la trama. Su final se enlentece, se vuelve predecible y no avanza rápido. Hasta su secuencia final es bastante decepcionante, viendo lo que pasó en toda la película."
+    ] },
+    { tipo: 'Cine', n: 39, titulo: 'Street Fighter II: The Animated Movie', anio: '1994', nota: 4, texto: [
+      "De chico amaba esta película. Verla de nuevo me chocó.",
+      "Genuinamente, no creo que sea mala. Sin embargo, toda la trama de Ryu caminando de punto A a B me aburrió. No pasaba nada y sus escenas eran eternas.",
+      "Por lo demás, las secuencias de pelea son impresionantes. Todas. El desarrollo de los protagonistas es muy bueno. Su villano es temible. Y su animación es impecable."
+    ] },
+    { tipo: 'Música', n: 39, titulo: 'Y después no hablamos más', autor: 'Balta', anio: '2021', nota: 4, texto: [
+      "Cortito pero especial. Con solo 8 canciones, este disco deja en claro al joven uruguayo que tiene un tremendo futuro. Comienza con el temazo de \"NENA!\" con una mezcla de sonidos como la trompeta y la percusión que le dan vida a la cultura uruguaya vista a través de los ojos de un joven. Después de esa introducción, se baja el ritmo para escuchar canciones como \"Tuyo\", \"Nuestros ecos\" y \"Rita\" temas que se mueven en el eje de la guitarra y la voz. Con grandes letras y honestidad. Gran sonoridad que mezcla el pasado con los ritmos más modernos.",
+      "En general, un gran disco que muestra en primera plana la identidad musical de este joven y lo presenta de una gran manera."
+    ] },
+    { tipo: 'Música', n: 40, titulo: 'Cuando me mires', autor: 'Balta', anio: '2022', nota: 4, texto: [
+      "Las letras de este disco cobran una nueva vida. Mejoran ampliamente. La cultura del candombe tiene más presencia y embellece aún más un disco con una tonalidad tan hermosa. Temas como \"Lágrima\" demuestran esto con certeza. \"Veneno\" tiene un ritmo tan latino espectacular. \"Lo que tenga que ser!\" temazo.",
+      "Algo que no suelo destacar son las portadas. Esta tiene una sencilla pero perfecta porque engloba en una sola toma la importancia de la música en Balta desde pequeño ya transpiraba la música y la vivía en carne propia."
+    ] },
+    { tipo: 'Música', n: 41, titulo: 'Todo antes de irme', autor: 'Balta', anio: '2023', nota: 3, texto: [
+      "Balta regresa con un estilo menos personal y más movido. Suena un poco más digital y pop. Un sonido que tiene como inspiración la música como el trap y el reguetón. Un camino que veo válido pero disfruto más cuando lo entrelaza con sus raíces y con el candombe.",
+      "Las letras realmente pierden la fuerza y se vuelven más genéricas y básicas."
+    ] },
+    { tipo: 'Música', n: 42, titulo: 'Ayer dijiste mañana', autor: 'Balta', anio: '2026', nota: 4, texto: [
+      "Un disco que siento que fue muy influenciado por músicos como Ca7riel y Paco Amoroso. Una sonoridad que mezcla las letras jugadas, la sonoridad local y la influencia de la música como el trap y la electrónica.",
+      "En este disco sí puedo visualizar un estilo más interesante con letras mejores y ritmos que varían de lo más movido a lo más personal.",
+      "Hay temas como \"KIERO TO!\", \"TODA LA VIDA\" que suenan impresionantes. El primero, muy similar al tema \"Bad Bitch\" de Ca7riel y el segundo, la guitarra me recuerda a \"Díganselo\" del Kuelgue y una vibra a Michael Jackson bastante lejana. Eso no es malo, sino que es parte de esa identidad que se construye con buenas influencias.",
+      "Obviamente, temas como \"CON QUIÉN??\" con Jorge Drexler y \"Desde el corazón\" con Rubén Rada son impresionantes."
+    ] },
+    { tipo: 'Música', n: 43, titulo: 'Moses and the Drones', autor: 'Tom Rowley', anio: '2026', nota: 4, texto: [
+      "Parece una continuación (spin off) del último disco de los Arctic Monkeys. Por momentos me confundía con la voz de él y la de Turner. Es extraño, pero me encanta.",
+      "Un disco único e interesante, con una sonoridad muy influenciada por la música de los 70s. Una guitarra muy presente que da vida a los temas de manera magistral.",
+      "Destaco del disco: \"Tell me what you want\", \"Mor\" y \"Something strange\"; en la que sí tuvo implicación Alex Turner como coproductor."
+    ] },
     { tipo: 'Cómics', n: 4, titulo: 'Los Tres Guerreros', autor: 'Colección de novelas gráficas de los héroes más poderosos de Marvel #9', anio: '1987-1988 y 2011', nota: 4, texto: [
       'Estos tres personajes son bastante desconocidos del universo de Marvel para el público general. Tienen una aventura divertida y heroica. No se achican a la hora de mostrar una faceta interesante del mundo de los cómics: la relación de la mitología y Marvel, que evidencia todo el aspecto fantástico de este universo.',
       'Divertida, pero no más. Tampoco es que sea una locura. No es mala, ni mucho menos. Pero sí es un poco secundaria dentro de todo el espectro de héroes de Marvel. Se queda como una historia de un episodio random dentro de un mundo muy grande. Destaco la relación de los personajes y su crecimiento mostrado a través de los flashbacks.',
@@ -249,88 +314,245 @@ window.DESCUBRIMIENTOS = [
   ]},
 
   { mes: 'Marzo 2026', items: [
-    { tipo: 'Cine', n: 21, titulo: 'Marty Supreme', anio: '2025', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 22, titulo: 'No es otra tonta película americana', anio: '2001', nota: 3, texto: [] },
-    { tipo: 'Cine', n: 23, titulo: 'Hamnet', anio: '2025', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 24, titulo: 'La Navidad de Harold y Kumar', anio: '2011', nota: 2, texto: [] },
-    { tipo: 'Cine', n: 25, titulo: 'La noche de los muertos vivientes', anio: '1968', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 26, titulo: 'Dragon Ball Z: El poder invencible', anio: '1993', nota: 4, texto: [] },
-    { tipo: 'Música', n: 19, titulo: 'Lata con Plata', autor: 'Tussiwarriors', anio: '2026', nota: 3, texto: [] },
-    { tipo: 'Música', n: 20, titulo: 'State of Euphoria', autor: 'Anthrax', anio: '1988', nota: 4, texto: [] },
-    { tipo: 'Música', n: 21, titulo: 'La luz que sabe robar', autor: 'Jorge Drexler', anio: '1992', nota: 4, texto: [] },
-    { tipo: 'Música', n: 22, titulo: 'Radar', autor: 'Jorge Drexler', anio: '1994', nota: 4, texto: [] },
-    { tipo: 'Música', n: 23, titulo: 'Vaivén', autor: 'Jorge Drexler', anio: '1996', nota: 4, texto: [] },
-    { tipo: 'Música', n: 24, titulo: 'Llueve', autor: 'Jorge Drexler', anio: '1998', nota: 4, texto: [] },
-    { tipo: 'Música', n: 25, titulo: 'Frontera', autor: 'Jorge Drexler', anio: '1999', nota: 5, texto: [] },
-    { tipo: 'Música', n: 26, titulo: 'Sea', autor: 'Jorge Drexler', anio: '2001', nota: 5, texto: [] },
-    { tipo: 'Música', n: 27, titulo: 'Eco', autor: 'Jorge Drexler', anio: '2004', nota: 5, texto: [] },
-    { tipo: 'Música', n: 28, titulo: '12 segundos de oscuridad', autor: 'Jorge Drexler', anio: '2006', nota: 5, texto: [] },
-    { tipo: 'Música', n: 29, titulo: 'Amar la trama', autor: 'Jorge Drexler', anio: '2010', nota: 4, texto: [] },
-    { tipo: 'Música', n: 30, titulo: 'Bailar en la cueva', autor: 'Jorge Drexler', anio: '2014', nota: 4, texto: [] },
-    { tipo: 'Música', n: 31, titulo: 'Salvavidas de hielo', autor: 'Jorge Drexler', anio: '2017', nota: 4, texto: [] },
-    { tipo: 'Música', n: 32, titulo: 'Tinta y tiempo', autor: 'Jorge Drexler', anio: '2022', nota: 5, texto: [] },
-    { tipo: 'Música', n: 33, titulo: 'Taracá', autor: 'Jorge Drexler', anio: '2026', nota: 5, texto: [] },
-    { tipo: 'Música', n: 34, titulo: "Harry's House", autor: 'Harry Styles', anio: '2022', nota: 4, texto: [] },
-    { tipo: 'Música', n: 35, titulo: 'Free Spirits', autor: 'Ca7riel & Paco Amoroso', anio: '2026', nota: 4, texto: [] },
-    { tipo: 'Música', n: 36, titulo: 'Volcano', autor: 'Jungle', anio: '2023', nota: 4, texto: [] },
-    { tipo: 'Música', n: 37, titulo: 'Mer de Noms', autor: 'A Perfect Circle', anio: '2000', nota: 4, texto: [] },
-    { tipo: 'Música', n: 38, titulo: 'Juniper', autor: 'Joy Crookes', anio: '2025', nota: 4, texto: [] },
-    { tipo: 'Juegos', n: 5, titulo: 'Dragon Ball: Sparking! Zero', anio: '2024', nota: 4, texto: [] },
-    { tipo: 'Juegos', n: 6, titulo: 'Street Fighter 6', anio: '2023', nota: 5, texto: [] },
-    { tipo: 'Libros', n: 2, titulo: 'Messi es un perro y otros cuentos', autor: 'Hernán Casciari', anio: '2016', nota: 4, texto: [] },
-    { tipo: 'Cómics', n: 1, titulo: 'Dragon Ball Ultimate #04', autor: 'Akira Toriyama', nota: 4, texto: [] },
-    { tipo: 'Cómics', n: 2, titulo: 'Fullmetal Alchemist #04', autor: 'Hiromu Arakawa', nota: 4, texto: [] },
-    { tipo: 'Cómics', n: 3, titulo: 'El Eternauta', anio: '1957-1959', nota: 4, texto: [] },
+    { tipo: 'Cine', n: 21, titulo: 'Marty Supreme', anio: '2025', nota: 5, texto: [
+      "Tensión constante, excelente fotografía y gran actuación. Tres condimentos que hacen que la película sea casi perfecta. Timothée la rompe y su viaje como personaje es increíble. Ese plano final es espléndido."
+    ] },
+    { tipo: 'Cine', n: 22, titulo: 'No es otra tonta película americana', anio: '2001', nota: 3, texto: [
+      "Me encantan las películas del estilo absurdo, sin embargo esta peca de ser muy básica por momentos y que sus chistes no se alejen de parodiar sin sumarle sustancia o intención crítica. Bastante mediocre. Lo bueno es Chris Evans."
+    ] },
+    { tipo: 'Cine', n: 23, titulo: 'Hamnet', anio: '2025', nota: 5, texto: [
+      "Qué actuación de Jessie Buckley. La rompe y entrega una performance emotiva y desgarradora. Todos están bien, capaz por momentos peca de cursi, pero qué buen retrato ficcional-histórico de la historia de Shakespeare y su mujer Anne."
+    ] },
+    { tipo: 'Cine', n: 24, titulo: 'La Navidad de Harold y Kumar', anio: '2011', nota: 2, texto: [
+      "Si la primera me pareció buenísima, la segunda un meh. Esta es pésima. No la salvo a pesar de tener en algunos momentos buenos chistes. Pero en general es mala, mala. Chistes demasiado infantiles y lo peor de todo que sea “3d”, que horrible cuando las películas se venden solo por una herramienta o técnica utilizada."
+    ] },
+    { tipo: 'Cine', n: 25, titulo: 'La noche de los muertos vivientes', anio: '1968', nota: 4, texto: [
+      "Magnífica película que da origen al estilo de filmes zombies moderno. A pesar de ser una de las primeras parece que este realizada en el apogeo del género. Está todo acá. Destaco la manera de manejar la cámara que es impresionante y los personajes. La única que me chirría toda la película es la protagonista que actúa pésimo. El final lo mejor ya que abre el debate y plantea algo interesante que no se toca en toda la película."
+    ] },
+    { tipo: 'Cine', n: 26, titulo: 'Dragon Ball Z: El poder invencible', anio: '1993', nota: 4, texto: [
+      "De las mejores películas de Dragon Ball Z, en este caso tenemos la presentación del temible Broly. Todos los guerreros z tienen su momento para brillar, Vegeta el personaje con el viaje interno más profundo. Lo único malo es su final que es muy malo y con una resolución digna de considerarse deus ex machina."
+    ] },
+    { tipo: 'Música', n: 19, titulo: 'Lata con Plata', autor: 'Tussiwarriors', anio: '2026', nota: 3, texto: [
+      "Esperaba más de estos muchachos, sin embargo dejan un poco que desear. Su humor irreverente es divertido por momentos, pero me hubiera gustado más trabajo en el concepto del disco en el humor general y un camino de principio a fin. Que no quede en una recopilación de chistes de humor negro de 40 minutos."
+    ] },
+    { tipo: 'Música', n: 20, titulo: 'State of Euphoria', autor: 'Anthrax', anio: '1988', nota: 4, texto: [
+      "Buen álbum de Metal. Nunca había escuchado Anthrax hasta este momento. Destacan esos impresionantes riff de guitarra. A su vez Charlie Benante en la batería la rompe en temas como \"Now It's Dark\". Me gusta mucho el inicio del disco con \"Be All, End All\"."
+    ] },
+    { tipo: 'Música', n: 21, titulo: 'La luz que sabe robar', autor: 'Jorge Drexler', anio: '1992', nota: 4, texto: [
+      "Su primer disco es impresionante el nivel que tiene. Lo íntimo que suena donde se puede denotar su origen lírico perfecto junto con su gran técnica de guitarra. Destaco temas como: “Equipaje”, “Vaivén” y “La aparecida”. cierre con magnífico con “La luna del cabo”"
+    ] },
+    { tipo: 'Música', n: 22, titulo: 'Radar', autor: 'Jorge Drexler', anio: '1994', nota: 4, texto: [
+      "Comienza el disco con “Radar” un temazo que da ritmo y comienza con fuerza. La guitarra en este disco agarra más fuerza que el anterior. Su punteo y rasgueo se siente con más presencia. “Tu voyeur” es un temazo también junto con “Cerca del mar” que denota esa influencia de Brasil en su forma de componer."
+    ] },
+    { tipo: 'Música', n: 23, titulo: 'Vaivén', autor: 'Jorge Drexler', anio: '1996', nota: 4, texto: [
+      "Es el primer disco de Jorge fuera del país pero increíblemente se siente más local que nunca. Comenzar el disco así se siente que nunca hubiera viajado. “Zamba del olvido” hermosa pieza musical como también lo es “Dos colores: Blanco y negro” y “La luna de espejos”. Se siente como una reinvención pequeña de sus primeros discos, más su nuevo trabajo. Un comienzo fresco."
+    ] },
+    { tipo: 'Música', n: 24, titulo: 'Llueve', autor: 'Jorge Drexler', anio: '1998', nota: 4, texto: [
+      "No descubro nada cuando digo que es uno de los más grandes compositores y letristas de nuestro país. Este disco vuelve a demostrar la facilidad con la que logra que sus letras sean tan perfectas. Canciones como “Cara B” y “La huella de tu mirada” muestran su lado más romántico y profundo. “Montevideo” uno de los temas más hermosos hasta ahora, dice tantas verdades que te llena el alma."
+    ] },
+    { tipo: 'Música', n: 25, titulo: 'Frontera', autor: 'Jorge Drexler', anio: '1999', nota: 5, texto: [
+      "Por mucho tiempo este era uno de mis discos favoritos de principio a fin de Drexler. Ese sentimiento de nostalgia, amor y conexión con tu país desde la distancia. “La edad del cielo” es de mis canciones favoritas de él. “Frontera” y “Alto el fuego” se sienten como clásicos uruguayos instantáneos."
+    ] },
+    { tipo: 'Música', n: 26, titulo: 'Sea', autor: 'Jorge Drexler', anio: '2001', nota: 5, texto: [
+      "Si el anterior era bueno, este es impresionantemente mejor. Se supera en todos los aspectos. Su cambio en el sonido a algo más moderno es recibido de una manera magistral. No siento que haya sacrificado nada, su sonido evoluciona y sus letras continúan perfectas.",
+      "Todos son temazos, pero quiero destacar “Me haces bien” tiene algo que me lleva a la niñez, a sentirme bien, a ver Uruguay con ojos de nostalgia."
+    ] },
+    { tipo: 'Música', n: 27, titulo: 'Eco', autor: 'Jorge Drexler', anio: '2004', nota: 5, texto: [
+      "Eco es perfecto en todo. Se siente redondo por todas partes. Otra vez Drexler lleva su música a un nuevo paso. Suma sonidos e instrumentos. “Ecos” también es nostálgica y hermosa. “Milonga del moro judio”, “Salvapantallas”, “Fusión”, “Deseo”, “Todo se transforma”, “Guitarra y vos”... Tantos temas hermosamente perfectos. Este es mi disco favorito de su etapa de los 2000."
+    ] },
+    { tipo: 'Música', n: 28, titulo: '12 segundos de oscuridad', autor: 'Jorge Drexler', anio: '2006', nota: 5, texto: [
+      "Otra vez evoluciona. Otra vez demuestra que es el músico uruguayo más grande vivo. No me canso de decir que no sabemos el valor del gran artista que vive y comparte nuestra nacionalidad. Este disco es hermoso. El concepto es interesante y su exploración a través de estos temas destaca. Y el cover que se manda de Radiohead con “High and Dry” es sorpresivo pero lo amo. Hasta acá tiene una tetralogía intocable. Perfecta."
+    ] },
+    { tipo: 'Música', n: 29, titulo: 'Amar la trama', autor: 'Jorge Drexler', anio: '2010', nota: 4, texto: [
+      "“La trama y el desenlace” temazo como también lo son “Mundo abisal” y “Una canción me trajo hasta aquí”. Este disco es para mí un paso atrás, un regreso a su estilo guitarra y voz, vuelve a un sonido más puro de él. No significa que sea malo. Es una locura de disco, pero venir de los anteriores le pesan un poco."
+    ] },
+    { tipo: 'Música', n: 30, titulo: 'Bailar en la cueva', autor: 'Jorge Drexler', anio: '2014', nota: 4, texto: [
+      "Evolución define ahora a Jorge Drexler. Es una palabra que no significa rechazar lo anterior o perder lo que uno lo define sino aprender de lo anterior y probar cosas nuevas. En este caso Drexler experimenta con el baile, con la música que te hace mover el esqueleto. Destaco de este disco los temas: “Bailar en la cueva”, “Bolivia” y “Universos Paralelos”. Otra vez Drexler a otro nivel."
+    ] },
+    { tipo: 'Música', n: 31, titulo: 'Salvavidas de hielo', autor: 'Jorge Drexler', anio: '2017', nota: 4, texto: [
+      "Volvemos a la guitarra como protagonista, sin embargo, Drexler demuestra que con ella se puede trasmitir tanto, sin ni siquiera necesitar tanto firulete ni fuegos artificiales. Solo hacer buena música bien escrita. Por mucho tiempo estaba obsesionado con la canción “La telefonía”, la escuchaba muchas veces seguidas."
+    ] },
+    { tipo: 'Música', n: 32, titulo: 'Tinta y tiempo', autor: 'Jorge Drexler', anio: '2022', nota: 5, texto: [
+      "Una obra maestra. Drexler ganó la batalla contra la hoja en blanco y con eso nos trajo un disco perfecto de principio a fin. No voy a enlistar todos los temas porque todos están buenos. No hay uno que no me guste. Antes de la salida del último disco, este era el que más veces había escuchado constantemente. Una vez tras otra. Su sonido tan perfeccionado donde nada se le escapa. Su trabajo con gente tan grande y con gente tan joven. Una locura a dónde llegó Drexler."
+    ] },
+    { tipo: 'Música', n: 33, titulo: 'Taracá', autor: 'Jorge Drexler', anio: '2026', nota: 5, texto: [
+      "Cuando me enteré de que Drexler iba a volver a las raíces uruguayas me pregunté: ¿cuándo las dejó? En todos sus discos Uruguay está presente, a través de sus mares, letras y sensaciones. Pero ahora trae a la mesa uno de los géneros locales que más me conmueve. El candombe. Hermoso disco. Al igual que Tinta y Tiempo, lo escuché tantas veces que no me sorprende que con el paso del tiempo se convierta en mi disco favorito. Dominio de letra, de música. Vuelvo a repetirlo, Drexler es el mejor músico uruguayo vivo. Tenemos que valorarlo. El valora a Uruguay como su fuente de vida musical. Nosotros debemos devolverle todo el amor que nos da."
+    ] },
+    { tipo: 'Música', n: 34, titulo: "Harry's House", autor: 'Harry Styles', anio: '2022', nota: 4, texto: [
+      "Si el anterior disco era muy pop este es lo siguiente. Pero diferente a lo que opino del otro. Siento que acá Harry usa su maestría musical y compositiva para lograr un disco único dentro del pop. Suena bien, canta bien y tiene unos ritmos muy pegadizos. Temas como “Late night Talking”, “As it was” y “Cinema” me parecen lo mejor del disco."
+    ] },
+    { tipo: 'Música', n: 35, titulo: 'Free Spirits', autor: 'Ca7riel & Paco Amoroso', anio: '2026', nota: 4, texto: [
+      "La primera escucha me dejó con una sensación fría. Pero después de darle otras oportunidades creo que es un gran álbum. Sus temas suenan ingeniosos, interesantes musicalmente. La variedad compositiva de los muchachos es impresionante. El trabajo conceptual y de marketing suma. Pero, centrándome en su música siguen siendo unos genios jóvenes. Su colaboración con Sting, Fred Again son perfectas, pero me quedo con “Himno del mediocre” un temazo con vibras de Miranda y temas de los 60-70s hispanos."
+    ] },
+    { tipo: 'Música', n: 36, titulo: 'Volcano', autor: 'Jungle', anio: '2023', nota: 4, texto: [
+      "Por mucho tiempo había visto los maravillosos e impresionantes videoclips en youtube de este álbum. Cada vez que lo ponía me quedaba embobado con las grandes coreografías. Ahora bien. Su música también es impresionante. Discazo de principio a fin. Un sonido tan propio de Jungle que demuestra su gran habilidad para mezclar el Funk y volverlo actual."
+    ] },
+    { tipo: 'Música', n: 37, titulo: 'Mer de Noms', autor: 'A Perfect Circle', anio: '2000', nota: 4, texto: [
+      "Conocía a su guitarrista Billy Howerdel por el soundtrack de Jak X. Acá tengo más de lo mismo pero con letra. Muy buena banda y buen disco. Un debut impresionante para una banda que suena muy 2000s pero con un estilo metal muy particular."
+    ] },
+    { tipo: 'Música', n: 38, titulo: 'Juniper', autor: 'Joy Crookes', anio: '2025', nota: 4, texto: [
+      "Joy Crookes vuelve con un sonido más R&B y jazz. A falta de la gran Amy, Joy lo hace espectacular. Su voz es única y suena bien cante lo que cante. Pero quiero destacar que en este disco prueba con nuevas aproximaciones de su anterior trabajo. Busca nuevos sonidos, más pop o más personales.",
+      "Destaco temas como: “I know you'd kill”, “Somebody to you”, “Forever” y “Carmen”. Tiene un gran futuro Joy como artista."
+    ] },
+    { tipo: 'Juegos', n: 5, titulo: 'Dragon Ball: Sparking! Zero', anio: '2024', nota: 4, texto: [
+      "Se siente nostálgico regresar a este juego después de tantos años. Muchas horas le dediqué de niño a la versión de PS2 jugando con mi primo y mis amigos. El nuevo lo logra viéndose increíble en el proceso. El anime siempre estará en nuestro corazón por su importancia emocional en nuestra juventud. Este juego nos transporta a ese momento, de chocolatadas y jugar toda la tarde con amigos."
+    ] },
+    { tipo: 'Juegos', n: 6, titulo: 'Street Fighter 6', anio: '2023', nota: 5, texto: [
+      "Antes de este Street Fighter los únicos que había disfrutado realmente eran el Third Strike y el 2 como todo el universo. Sin embargo, este juego me hizo amar la franquicia. Me jugué todos hasta probar este y puedo decir que es el paso correcto en la evolución de la saga. Es uno de los mejores juegos de pelea de los últimos años. Táctico, complejo pero a su vez simple. Gran estilo estético y diseño de personajes. Gameplay con cero problemas reales y con mucho contenido para jugar singleplayer. Excelente juego."
+    ] },
+    { tipo: 'Libros', n: 2, titulo: 'Messi es un perro y otros cuentos', autor: 'Hernán Casciari', anio: '2016', nota: 4, texto: [
+      "Qué divertido es leer a Casciari. Sin dudarlo es uno de los únicos autores que realmente me saca una sonrisa genuina cuando lo leo. Por momentos puede emocionar con su relato y engancharte pegado al libro hasta no devorártelo de una sentada. Su humor que varía entre intelectual y picante, entre humillante y jugado. Entre honesto y crudo. Fascinante autor. Donde puedo destacar su relato en torno a la foto con su padre. Enternecedor."
+    ] },
+    { tipo: 'Cómics', n: 1, titulo: 'Dragon Ball Ultimate #04', autor: 'Akira Toriyama', nota: 4, texto: [
+      "El torneo en su máximo esplendor, Muten Roshi es un personaje icónico por lejos. Amo la manera en que Toriyama disfruta de jugar con el humor y después pasar a escenas de acción impresionante donde el combate de artes marciales es lo primordial. La pelea con Goku es mítica."
+    ] },
+    { tipo: 'Cómics', n: 2, titulo: 'Fullmetal Alchemist #04', autor: 'Hiromu Arakawa', nota: 4, texto: [
+      "Conocemos en profundidad el secreto de los hermanos. La trágica historia que los lleva a la aventura en la que están. Vemos la historia de su maestra y la importancia de su determinación en su camino. Impresionante narración y dibujo. Es un manga único."
+    ] },
+    { tipo: 'Cómics', n: 3, titulo: 'El Eternauta', anio: '1957-1959', nota: 4, texto: [
+      "Después de ver la serie, fui recomendado a leer este cómic gracias a un amigo Argentino. Tremenda historia sci-fi muy cinematográfica en papel. Llena de momentazos y muy bien escrita y dibujada. Capaz en el medio se siente sin rumbo pero el último acto es lo que lo encamina. Me faltó un clímax más potente. Entiendo la intención del autor, jugar con lo meta de la historia, pero se siente un guionazo"
+    ] },
   ]},
 
   { mes: 'Febrero 2026', items: [
-    { tipo: 'Cine', n: 13, titulo: 'Moulin Rouge', anio: '2001', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 14, titulo: 'El señor de los anillos: El retorno del rey', anio: '2003', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 15, titulo: 'La hermanastra fea', anio: '2025', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 16, titulo: 'Frankenstein', anio: '2025', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 17, titulo: 'Los pecadores', anio: '2025', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 18, titulo: 'Harold & Kumar Go to White Castle', anio: '2004', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 19, titulo: 'Harold & Kumar Escape from Guantanamo Bay', anio: '2008', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 20, titulo: 'Una batalla tras otra', anio: '2025', nota: 5, texto: [] },
-    { tipo: 'Series', n: 1, titulo: 'Justice League', anio: '2001-2004', nota: 5, texto: [] },
-    { tipo: 'Series', n: 2, titulo: 'Justice League Unlimited', anio: '2004-2006', nota: 5, texto: [] },
-    { tipo: 'Música', n: 6, titulo: 'Queens of the Stone Age', autor: 'Queens of the Stone Age', anio: '1998', nota: 4, texto: [] },
-    { tipo: 'Música', n: 7, titulo: 'Rated R', autor: 'Queens of the Stone Age', anio: '2000', nota: 4, texto: [] },
-    { tipo: 'Música', n: 8, titulo: 'Songs for the Deaf', autor: 'Queens of the Stone Age', anio: '2002', nota: 5, texto: [] },
-    { tipo: 'Música', n: 9, titulo: 'Lullabies to Paralyze', autor: 'Queens of the Stone Age', anio: '2005', nota: 4, texto: [] },
-    { tipo: 'Música', n: 10, titulo: 'Era Vulgaris', autor: 'Queens of the Stone Age', anio: '2007', nota: 4, texto: [] },
-    { tipo: 'Música', n: 11, titulo: '...Like Clockwork', autor: 'Queens of the Stone Age', anio: '2013', nota: 4, texto: [] },
-    { tipo: 'Música', n: 12, titulo: 'Villains', autor: 'Queens of the Stone Age', anio: '2017', nota: 4, texto: [] },
-    { tipo: 'Música', n: 13, titulo: 'In Times New Roman...', autor: 'Queens of the Stone Age', anio: '2023', nota: 5, texto: [] },
-    { tipo: 'Música', n: 14, titulo: 'Harry Styles', autor: 'Harry Styles', anio: '2017', nota: 4, texto: [] },
-    { tipo: 'Música', n: 15, titulo: 'Fine Line', autor: 'Harry Styles', anio: '2019', nota: 4, texto: [] },
-    { tipo: 'Música', n: 16, titulo: 'Peace, Love, Death Metal', autor: 'Eagles of Death Metal', anio: '2004', nota: 4, texto: [] },
-    { tipo: 'Música', n: 17, titulo: 'Death by Sexy', autor: 'Eagles of Death Metal', anio: '2006', nota: 3, texto: [] },
-    { tipo: 'Música', n: 18, titulo: 'Términos y Condiciones', autor: 'Usted Señálemelo', anio: '2026', nota: 4, texto: [] },
-    { tipo: 'Juegos', n: 4, titulo: 'Injustice 2', anio: '2017', nota: 4, texto: [] },
-    { tipo: 'Libros', n: 1, titulo: 'El Señor de los Anillos: Las dos torres', autor: 'J. R. R. Tolkien', anio: '1954', nota: 5, texto: [] },
+    { tipo: 'Cine', n: 13, titulo: 'Moulin Rouge', anio: '2001', nota: 5, texto: [
+      "Esta película logra transportarte de una manera muy convincente a un mundo mágico lleno de amor y grandes coreografías. Me encantó su estilo, sus actuaciones y su final."
+    ] },
+    { tipo: 'Cine', n: 14, titulo: 'El señor de los anillos: El retorno del rey', anio: '2003', nota: 5, texto: [
+      "No hay dudas, tremenda película, repleta de momentos icónicos y constante emoción que no acaba. Sin embargo es la que menos me gusta de las tres. Emociona todo el camino de Frodo y ver su desenlace por todo lo alto."
+    ] },
+    { tipo: 'Cine', n: 15, titulo: 'La hermanastra fea', anio: '2025', nota: 4, texto: [
+      "Gran retrato de este personaje que sufre las consecuencias de su contexto y que sufre con su búsqueda de ser elegida, de ser visible y tener la oportunidad de cumplir su sueño, aunque esto le cueste su salud."
+    ] },
+    { tipo: 'Cine', n: 16, titulo: 'Frankenstein', anio: '2025', nota: 5, texto: [
+      "En este caso la narración, el tratamiento visual y las actuaciones posiciona a esta película como una de las mejores del año. Destaco el tratamiento de la imagen que tiene planos que parecen pinturas. Hermosos que muestran el poder del encuadre."
+    ] },
+    { tipo: 'Cine', n: 17, titulo: 'Los pecadores', anio: '2025', nota: 5, texto: [
+      "Destaco su dirección de fotografía, diseño de producción, dirección y obviamente el apartado sonoro. Donde tiene escenas icónicas que cuentan muchísimo con poco. ¡Me encantó!"
+    ] },
+    { tipo: 'Cine', n: 18, titulo: 'Harold & Kumar Go to White Castle', anio: '2004', nota: 4, texto: [
+      "Sé que es muy estúpida. Pero amo estas películas tontas que te sacan una risa con lo más absurdo que sucede. Soy hijo del cine de humor de Leslie Nielsen y las Scary Movie. Mi humor ya está roto desde antes. En resumen me cagué de risa."
+    ] },
+    { tipo: 'Cine', n: 19, titulo: 'Harold & Kumar Escape from Guantanamo Bay', anio: '2008', nota: 4, texto: [
+      "Bueno, capaz esta es peor que la anterior. Me encanta el humor que maneja y más sabiendo que tocar temas como el terrorismo, xenofobia y racismo es un poco complicado, pero creo que lo hace bien."
+    ] },
+    { tipo: 'Cine', n: 20, titulo: 'Una batalla tras otra', anio: '2025', nota: 5, texto: [
+      "Se puede resumir como un padrazo que hará hasta lo imposible para traer con vida a su hija, de las manos de Sean Penn que la rompe y te deja asustado por lo extraño que es. Tremenda película."
+    ] },
+    { tipo: 'Series', n: 1, titulo: 'Justice League', anio: '2001-2004', nota: 5, texto: [
+      "Una de las mejores series animadas jamás hechas. Tramas complejas, personajes sólidos y gran animación. Su ritmo pausado permite mejores desarrollos, aunque dividir las historias en dos partes a veces le juega en contra."
+    ] },
+    { tipo: 'Series', n: 2, titulo: 'Justice League Unlimited', anio: '2004-2006', nota: 5, texto: [
+      "Más personajes y guiones mejor condensados que su predecesora. Pierde algo de desarrollo individual, pero gana en acción y trama continua. Su segunda temporada es de lo mejor en animación, capaz de competir con muchas series live action."
+    ] },
+    { tipo: 'Música', n: 6, titulo: 'Queens of the Stone Age', autor: 'Queens of the Stone Age', anio: '1998', nota: 4, texto: [
+      "Gran debut. Desde el arranque te pega con energía y actitud. Ya se nota la identidad de la banda y ese sonido denso que los iba a definir. Me encantó."
+    ] },
+    { tipo: 'Música', n: 7, titulo: 'Rated R', autor: 'Queens of the Stone Age', anio: '2000', nota: 4, texto: [
+      "Subidón de calidad tremendo. Más sólido, más variado y con temazos como The Lost Art Of Keeping A Secret y Auto Pilot. Acá empiezan a jugar en otra liga."
+    ] },
+    { tipo: 'Música', n: 8, titulo: 'Songs for the Deaf', autor: 'Queens of the Stone Age', anio: '2002', nota: 5, texto: [
+      "Mi favorito y el que más escuché. El concepto de viaje por EE.UU. funciona perfecto y el disco no baja nunca. Redondo de principio a fin. Obra maestra."
+    ] },
+    { tipo: 'Música', n: 9, titulo: 'Lullabies to Paralyze', autor: 'Queens of the Stone Age', anio: '2005', nota: 4, texto: [
+      "Más oscuro, más pesado, pero sin perder esencia. Gran nivel sonoro en general. Little Sister se me pegó en la cabeza y es imposible sacármela."
+    ] },
+    { tipo: 'Música', n: 10, titulo: 'Era Vulgaris', autor: 'Queens of the Stone Age', anio: '2007', nota: 4, texto: [
+      "El que menos me gusta. No es malo, pero siento que no tiene tantos temas que realmente se diferencien o destaquen como en los otros discos."
+    ] },
+    { tipo: 'Música', n: 11, titulo: '...Like Clockwork', autor: 'Queens of the Stone Age', anio: '2013', nota: 4, texto: [
+      "Su etapa más oscura y madura. Muy sólido y emocional. Tengo debilidad por If I Had a Tail. Disco fino, trabajado y con mucha personalidad."
+    ] },
+    { tipo: 'Música', n: 12, titulo: 'Villains', autor: 'Queens of the Stone Age', anio: '2017', nota: 4, texto: [
+      "Me gusta el cambio sonoro, pero es de los que menos me convence junto a Era Vulgaris. Destaco Head Like A Haunted House. Tiene cosas buenas, pero no me termina de cerrar."
+    ] },
+    { tipo: 'Música', n: 13, titulo: 'In Times New Roman...', autor: 'Queens of the Stone Age', anio: '2023', nota: 5, texto: [
+      "Discazo. Regreso por todo lo alto, tono dark y temas distintos a lo anterior pero con ADN QOTSA intacto. Volvieron fuertes."
+    ] },
+    { tipo: 'Música', n: 14, titulo: 'Harry Styles', autor: 'Harry Styles', anio: '2017', nota: 4, texto: [
+      "No pensé que me iba a gustar tanto. Íntimo, honesto y con identidad propia. Sign of the Times es un temazo icónico. Me sorprendió para bien."
+    ] },
+    { tipo: 'Música', n: 15, titulo: 'Fine Line', autor: 'Harry Styles', anio: '2019', nota: 4, texto: [
+      "Más pop que el anterior, pero dentro del género destaca en calidad. No se queda solo en lo pegadizo: hay muy buenas canciones que elevan el conjunto."
+    ] },
+    { tipo: 'Música', n: 16, titulo: 'Peace, Love, Death Metal', autor: 'Eagles of Death Metal', anio: '2004', nota: 4, texto: [
+      "Interesante propuesta paralela al mundo de Josh Homme, pero bastante repetitiva. Algunas me gustaron más que otras, aunque ninguna me quedó realmente grabada."
+    ] },
+    { tipo: 'Música', n: 17, titulo: 'Death by Sexy', autor: 'Eagles of Death Metal', anio: '2006', nota: 3, texto: [
+      "Sentí más de lo mismo que el anterior. La repetitividad le juega en contra y termina pasando sin dejar demasiada marca."
+    ] },
+    { tipo: 'Música', n: 18, titulo: 'Términos y Condiciones', autor: 'Usted Señálemelo', anio: '2026', nota: 4, texto: [
+      "Gran renovación de la banda, con más electrónica y riesgo. Los singles previos son lo mejor. En letras lo sentí básico y alguna canción demasiado pop y poco ingeniosa."
+    ] },
+    { tipo: 'Juegos', n: 4, titulo: 'Injustice 2', anio: '2017', nota: 4, texto: [
+      "Perfecciona el gameplay del anterior y sigue siendo muy divertido, aunque algunos zoners están rotos. La historia cumple, pero es lo más flojo. Destacan el roster y la personalización. En los DLC hay joyas como las Tortugas Ninja y Hellboy."
+    ] },
+    { tipo: 'Libros', n: 1, titulo: 'El Señor de los Anillos: Las dos torres', autor: 'J. R. R. Tolkien', anio: '1954', nota: 5, texto: [
+      "La narración de Tolkien alcanza un nivel impresionante.",
+      "Si el primero era más introductorio y denso, acá el mundo ya respira solo. La comunidad dividida avanza hacia un final que deja todo preparado para el enfrentamiento épico."
+    ] },
   ]},
 
   { mes: 'Enero 2026', items: [
-    { tipo: 'Cine', n: 1, titulo: 'El cartero siempre llama dos veces', anio: '1981', nota: 3, texto: [] },
-    { tipo: 'Cine', n: 2, titulo: 'The Naked Gun', anio: '2025', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 3, titulo: 'Los huéspedes', anio: '2015', nota: 2, texto: [] },
-    { tipo: 'Cine', n: 4, titulo: '28 semanas después', anio: '2007', nota: 3, texto: [] },
-    { tipo: 'Cine', n: 5, titulo: 'Decision to Leave', anio: '2022', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 6, titulo: 'The Running Man', anio: '2025', nota: 3, texto: [] },
-    { tipo: 'Cine', n: 7, titulo: 'La invención de Hugo', anio: '2011', nota: 3, texto: [] },
-    { tipo: 'Cine', n: 8, titulo: 'The Jester', anio: '2023', nota: 1, texto: [] },
-    { tipo: 'Cine', n: 9, titulo: 'Las colinas tienen ojos', anio: '1977', nota: 4, texto: [] },
-    { tipo: 'Cine', n: 10, titulo: 'Cinema Paradiso', anio: '1988', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 11, titulo: '8½', anio: '1963', nota: 5, texto: [] },
-    { tipo: 'Cine', n: 12, titulo: 'Solo Dios perdona', anio: '2013', nota: 5, texto: [] },
-    { tipo: 'Música', n: 1, titulo: '¿Dónde es el after?', autor: 'Rawayana', anio: '2026', nota: 4, texto: [] },
-    { tipo: 'Música', n: 2, titulo: 'Homework', autor: 'Daft Punk', anio: '1997', nota: 5, texto: [] },
-    { tipo: 'Música', n: 3, titulo: 'The New Abnormal', autor: 'The Strokes', anio: '2020', nota: 5, texto: [] },
-    { tipo: 'Música', n: 4, titulo: 'Suck It and See', autor: 'Arctic Monkeys', anio: '2011', nota: 5, texto: [] },
-    { tipo: 'Música', n: 5, titulo: "Whatever People Say I Am, That's What I'm Not", autor: 'Arctic Monkeys', anio: '2006', nota: 5, texto: [] },
-    { tipo: 'Juegos', n: 1, titulo: 'Yakuza', anio: '2005', nota: 5, texto: [] },
-    { tipo: 'Juegos', n: 2, titulo: 'Red Dead Revolver', anio: '2004', nota: 4, texto: [] },
-    { tipo: 'Juegos', n: 3, titulo: 'Injustice: Gods Among Us', anio: '2013', nota: 5, texto: [] },
+    { tipo: 'Cine', n: 1, titulo: 'El cartero siempre llama dos veces', anio: '1981', nota: 3, texto: [
+      "No es mala, tampoco es tan buena; el primer tercio me gustó por su tono de suspense. Sin embargo, su final deja muchísimo que desear, siendo muy aburrido el tono que alcanza a la mitad de la película."
+    ] },
+    { tipo: 'Cine', n: 2, titulo: 'The Naked Gun', anio: '2025', nota: 4, texto: [
+      "Gran retorno del humor sin sentido clásico de The Naked Gun; sin embargo, se desinfla hacia el final. Liam Neeson la rompe, pero obviamente no alcanza para igualar al gran Leslie."
+    ] },
+    { tipo: 'Cine', n: 3, titulo: 'Los huéspedes', anio: '2015', nota: 2, texto: [
+      "Con un plot Twist muy obvio y una trama muy estúpida, la película se queda en un meh y no muestra las virtudes del director, que está en sus años oscuros."
+    ] },
+    { tipo: 'Cine', n: 4, titulo: '28 semanas después', anio: '2007', nota: 3, texto: [
+      "No es mala, pero tampoco destaca. Se siente como una secuela más del montón que no busca innovar con nada nuevo."
+    ] },
+    { tipo: 'Cine', n: 5, titulo: 'Decision to Leave', anio: '2022', nota: 5, texto: [
+      "Excelentes actuaciones, gran guion y edición. Pero lo que más puedo destacar de toda esta película es su apartado visual, hace tiempo no veía una película que comunicara tanto con tan poco. \"Show me, don't tell\" en estado puro."
+    ] },
+    { tipo: 'Cine', n: 6, titulo: 'The Running Man', anio: '2025', nota: 3, texto: [
+      "No es mala, tiene muchísimas cosas buenas. La acción es impresionante. Sin embargo, si no supiera que la hizo Edgar Wright no pensaría que estaba para más. Siento que se queda corta para él. Termina siendo una película genérica de otro director."
+    ] },
+    { tipo: 'Cine', n: 7, titulo: 'La invención de Hugo', anio: '2011', nota: 3, texto: [
+      "Es increíble que el director de Goodfellas acá logra realizarle un homenaje a una de las figuras más importantes de la industria del cine. Todo aderezado de una película mágica y hermosa."
+    ] },
+    { tipo: 'Cine', n: 8, titulo: 'The Jester', anio: '2023', nota: 1, texto: [
+      "Valoro el intento igual, no es una superproducción de Hollywood, solo un grupo de cineastas que con poco querían hacer algo que cuanto mínimo tenga la profundidad básica necesaria."
+    ] },
+    { tipo: 'Cine', n: 9, titulo: 'Las colinas tienen ojos', anio: '1977', nota: 4, texto: [
+      "Está bien, tampoco es la gran cosa. Siento que el desarrollo de todo lo que tiene que ver con el mundo aislado podría trabajarse mejor. Pero no es una mala película, cumple con producir suspense."
+    ] },
+    { tipo: 'Cine', n: 10, titulo: 'Cinema Paradiso', anio: '1988', nota: 5, texto: [
+      "Hermosa película con la que conecto de una manera impresionante. Es que lo es, es impresionante, es linda y emocional. La música de Ennio Morricone me pone la piel de gallina, de sus mejores trabajos."
+    ] },
+    { tipo: 'Cine', n: 11, titulo: '8½', anio: '1963', nota: 5, texto: [
+      "Me gustó, tal vez no tengo claro todo lo que sucede. Pero disfruto esa suerte de cuento entreverado que nos cuenta las peripecias de este director estancado. Onírico y muy personal, me gusta."
+    ] },
+    { tipo: 'Cine', n: 12, titulo: 'Solo Dios perdona', anio: '2013', nota: 5, texto: [
+      "Bueno... silenciosa, confusa y muy bien grabada. Eso puede definir la película a la perfección. Disfruté de verla, pero no tengo claro por qué, pero sigo pensando que tal vez la estética se come lo narrativo."
+    ] },
+    { tipo: 'Música', n: 1, titulo: '¿Dónde es el after?', autor: 'Rawayana', anio: '2026', nota: 4, texto: [
+      "Sorpresa total porque parecía imposible superar el disco anterior. Aun así lo logra en lo bailable. Hay grandes temazos con letras picantes. Eso sí, el concepto se diluye y el disco se pierde un poco hacia el final."
+    ] },
+    { tipo: 'Música', n: 2, titulo: 'Homework', autor: 'Daft Punk', anio: '1997', nota: 5, texto: [
+      "Electrónica para vivirla en una fiesta de electrónica a todo lo que da. Repetición usada con maestría y sonidos que parecen inventados. No busca complacer: te hipnotiza. Es una obra maestra sin discusión."
+    ] },
+    { tipo: 'Música', n: 3, titulo: 'The New Abnormal', autor: 'The Strokes', anio: '2020', nota: 5, texto: [
+      "Para mí, el mejor disco de los Strokes. Todos los temas tienen algo memorable: himnos, riffs, melodías y una producción impecable. Madurez sin perder alma."
+    ] },
+    { tipo: 'Música', n: 4, titulo: 'Suck It and See', autor: 'Arctic Monkeys', anio: '2011', nota: 5, texto: [
+      "Cada escucha me genera una nostalgia muy particular. Melodías románticas, letras escritas de una manera impresionante. Para mí, contrastándolo con los demás de la carrera, es el “menos bueno” de los Arctic."
+    ] },
+    { tipo: 'Música', n: 5, titulo: "Whatever People Say I Am, That's What I'm Not", autor: 'Arctic Monkeys', anio: '2006', nota: 5, texto: [
+      "10 años después sigue siendo una locura la energía que maneja. Tiene de los mejores finales de disco que escuché. Obra maestra que demuestra el espíritu joven y rebelde de estos muchachos de Sheffield."
+    ] },
+    { tipo: 'Juegos', n: 1, titulo: 'Yakuza', anio: '2005', nota: 5, texto: [
+      "Al iniciarlo esperé decepcionarme. Pero la verdad lo disfruté al completo. La trama está muy bien construida y el gameplay es muy bueno. Tal vez, las interacciones espontáneas en las calles son muy molestas. Y las misiones secundarias son poco llamativas."
+    ] },
+    { tipo: 'Juegos', n: 2, titulo: 'Red Dead Revolver', anio: '2004', nota: 4, texto: [
+      "Es increíble pensar que este juego es el predecesor de la mejor saga de Rockstar. Gameplay tosco con bugs que arruinan ciertas partes, mi caso el boss final que desapareció del mapa, apareciendo cinemática final. Red icónico, lo demás olvidable."
+    ] },
+    { tipo: 'Juegos', n: 3, titulo: 'Injustice: Gods Among Us', anio: '2013', nota: 5, texto: [
+      "Ya pasaron años de este juego, la que nos mostró a Superman como un héroe manipulable. Me encantó en su momento y me sigue gustando. Gran juego que realmente me divierte. Muy completo con las misiones de Star Labs. ¡Aguante Green Arrow!"
+    ] },
   ]},
 ];
