@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gonzalo Palomeque · Guionista y realizador</title>
+<meta name="description" content="Gonzalo Palomeque, guionista y realizador audiovisual de Montevideo. Cine, cómic, novela y juegos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --negro:#000;
+    --carbon:#141414;     /* superficies sobre negro */
+    --linea:#2A2A2A;
+    --rojo:#D7281F;       /* el rojo del póster de Hojeos */
+    --rojo-osc:#8E1712;
+    --hueso:#F1EEE8;      /* texto y hoja de guion */
+    --gris:#9A9690;
+    --sans:"Montserrat", "Helvetica Neue", Arial, sans-serif;
+    --guion:"Courier Prime", "Courier New", monospace;
+    --ancho:1200px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{background:var(--negro);color:var(--hueso);font-family:var(--sans);font-size:17px;line-height:1.65;font-weight:400}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--rojo);outline-offset:3px}
+  img{max-width:100%;display:block}
+  .envoltura{max-width:var(--ancho);margin:0 auto;padding:0 28px}
+
+  /* ---------- Navegación ---------- */
+  .barra{position:sticky;top:0;z-index:30;background:rgba(0,0,0,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--linea)}
+  .barra .envoltura{display:flex;align-items:center;justify-content:space-between;gap:20px;height:64px}
+  .firma{font-weight:900;font-size:20px;text-decoration:none;letter-spacing:-.3px}
+  .firma i{font-style:normal;color:var(--rojo)}
+  .menu{display:flex;gap:26px;list-style:none;font-size:14px;font-weight:500}
+  .menu a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+  .menu a:hover{border-bottom-color:var(--rojo)}
+  .boton-menu{display:none;background:none;color:var(--hueso);border:1px solid var(--hueso);font:600 14px var(--sans);padding:6px 14px;cursor:pointer}
+  @media (max-width:880px){
+    .boton-menu{display:block}
+    .menu{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--negro);border-bottom:1px solid var(--linea)}
+    .menu.abierto{display:flex}
+    .menu a{display:block;padding:15px 28px;border-bottom:1px solid var(--linea)}
+  }
+
+  /* ---------- Portada ---------- */
+  .portada{padding:80px 0 96px;position:relative;overflow:hidden}
+  .portada .envoltura{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px 64px;align-items:start}
+  .nombre{grid-column:1 / -1;font-weight:900;text-transform:uppercase;line-height:.86;font-size:clamp(54px,10.4vw,150px);letter-spacing:-.04em}
+  .nombre span{display:block}
+  .nombre span:last-child{color:var(--rojo)}
+  .bajada{font-size:20px;font-weight:500;max-width:30ch;line-height:1.5}
+  .bajada-sec{margin-top:18px;color:var(--gris);font-size:16px;max-width:38ch}
+  .pagina{background:var(--hueso);color:#151515;font-family:var(--guion);font-size:16px;line-height:1.55;padding:40px 44px 44px;position:relative;box-shadow:10px 10px 0 var(--rojo)}
+  .pagina .num{position:absolute;top:16px;right:22px;color:#777;font-size:14px}
+  .escena{font-weight:700;text-transform:uppercase}
+  .escena mark{background:var(--rojo);color:#fff;padding:1px 6px}
+  .accion{margin:16px 0}
+  .personaje{margin:20px 0 0 38%;text-transform:uppercase}
+  .acotacion{margin-left:28%;font-style:italic;color:#444}
+  .dialogo{margin:0 12% 0 22%}
+  .transicion{text-align:right;text-transform:uppercase;margin-top:22px}
+  .cursor{display:inline-block;width:.6em;background:#151515;animation:titila 1s steps(1) infinite}
+  @keyframes titila{50%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){.cursor{display:none}}
+  @media (max-width:880px){
+    .portada .envoltura{grid-template-columns:1fr}
+    .pagina{padding:30px 24px 34px;font-size:15px;box-shadow:7px 7px 0 var(--rojo)}
+    .personaje{margin-left:30%}.acotacion{margin-left:18%}.dialogo{margin:0 4% 0 12%}
+  }
+
+  /* ---------- Secciones ---------- */
+  .seccion{padding:104px 0}
+  .slug{font-family:var(--guion);font-weight:700;font-size:14px;color:var(--rojo);margin-bottom:12px}
+  .titulo{font-weight:900;text-transform:uppercase;font-size:clamp(42px,6.4vw,84px);line-height:.92;letter-spacing:-.03em;margin-bottom:20px}
+  .intro{max-width:56ch;margin-bottom:52px;color:#CFCBC4}
+
+  /* ---------- Obra: carteles ---------- */
+  .obra{background:var(--carbon);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+  .carteles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
+  .cartel{background:none;border:none;color:inherit;text-align:left;cursor:pointer;font:inherit;padding:0}
+  .cartel .marco{aspect-ratio:2/3;overflow:hidden;background:#000;border:1px solid var(--linea);position:relative}
+  .cartel img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease, filter .5s ease}
+  .cartel:hover img,.cartel:focus-visible img{transform:scale(1.04)}
+  .cartel .sin-afiche{position:absolute;inset:0;display:flex;align-items:flex-end;padding:18px;background:linear-gradient(transparent 40%,rgba(0,0,0,.85))}
+  .cartel .sin-afiche b{font-weight:800;font-size:24px;line-height:1}
+  .cartel h3{font-weight:800;font-size:19px;text-transform:uppercase;margin-top:14px;letter-spacing:-.01em}
+  .cartel p{font-size:14px;color:var(--gris)}
+  .cartel .ver{color:var(--rojo);font-weight:600}
+  @media (max-width:980px){.carteles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  @media (max-width:560px){.carteles{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}}
+
+  /* Ficha del corto (ventana) */
+  .ficha{position:fixed;inset:0;z-index:50;background:#000;display:none;overflow-y:auto}
+  .ficha.abierta{display:block}
+  .ficha .caja{max-width:1100px;margin:0 auto;padding:70px 28px 60px;position:relative}
+  .cerrar{position:absolute;top:22px;right:28px;background:none;border:1px solid var(--hueso);color:var(--hueso);font:600 14px var(--sans);padding:8px 16px;cursor:pointer}
+  .cerrar:hover{background:var(--rojo);border-color:var(--rojo)}
+  .ficha h3{font-weight:900;text-transform:uppercase;font-size:clamp(40px,6vw,72px);line-height:.95;letter-spacing:-.03em}
+  .ficha .datos{color:var(--gris);margin:10px 0 28px}
+  .ficha .pantalla{aspect-ratio:16/9;background:#000;border:1px solid var(--linea)}
+  .ficha .pantalla img{width:100%;height:100%;object-fit:contain}
+  .ficha .miniaturas{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+  .ficha .miniaturas button{border:2px solid transparent;padding:0;background:#000;cursor:pointer;aspect-ratio:16/9;overflow:hidden}
+  .ficha .miniaturas button[aria-current="true"]{border-color:var(--rojo)}
+  .ficha .miniaturas img{width:100%;height:100%;object-fit:cover}
+  .ficha-texto{margin-top:30px;max-width:70ch}
+  .sinopsis{font-size:19px;line-height:1.6}
+  .nota-ficha{color:var(--gris);margin-top:12px;font-size:15px}
+  .ficha-premios{margin-top:22px}
+  .ficha-premios:empty{display:none}
+  #ficha-enlace:not(:empty){margin-top:26px}
+  .pendiente{display:inline;background:var(--rojo-osc);color:#fff;padding:1px 6px;font-size:14px}
+
+  /* ---------- En desarrollo: viñetas ---------- */
+  .vinetas{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+  .vineta{border:2px solid var(--hueso);padding:26px 24px 28px;min-height:200px;display:flex;flex-direction:column;justify-content:space-between;min-width:0;position:relative}
+  .vineta.ancha{grid-column:span 4}.vineta.media{grid-column:span 3}.vineta.chica{grid-column:span 2}
+  .vineta.trama{background:radial-gradient(var(--rojo) 1.1px,transparent 1.5px) 0 0/8px 8px}
+  .vineta.roja{background:var(--rojo);border-color:var(--rojo)}
+  .genero{font-size:13px;font-weight:600;color:var(--gris)}
+  .vineta.roja .genero{color:#FFD9D5}
+  .vineta h3{font-weight:900;text-transform:uppercase;font-size:clamp(28px,3.4vw,46px);line-height:.95;letter-spacing:-.03em;margin:8px 0 18px;overflow-wrap:anywhere}
+  .vineta.chica h3{font-size:clamp(26px,2.5vw,34px)}
+  .pista{font-family:var(--guion);font-size:15px;line-height:1.5;align-self:flex-start;background:var(--negro);border:2px solid var(--hueso);border-radius:20px;padding:10px 16px;max-width:52ch}
+  .vineta.roja .pista{background:var(--hueso);color:#151515;border-color:var(--hueso)}
+  @media (max-width:880px){.vinetas{grid-template-columns:1fr}.vineta.ancha,.vineta.media,.vineta.chica{grid-column:auto}}
+
+  /* ---------- Juegos ---------- */
+  .juegos{background:var(--carbon);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+  .juego{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .mazo{position:relative;height:340px}
+  .carta{position:absolute;width:190px;height:270px;border:2px solid var(--hueso);border-radius:12px;background:var(--negro);padding:14px;display:flex;flex-direction:column;justify-content:space-between}
+  .carta b{font-weight:900;font-size:22px;text-transform:uppercase;line-height:1}
+  .carta .arte{flex:1;margin:10px 0;border:1px solid var(--linea);background:radial-gradient(var(--rojo) 1.4px,transparent 1.8px) 0 0/8px 8px}
+  .carta small{font-size:12px;color:var(--gris)}
+  .carta:nth-child(1){left:8%;top:40px;transform:rotate(-9deg)}
+  .carta:nth-child(2){left:28%;top:18px;transform:rotate(2deg);background:var(--rojo);border-color:var(--rojo)}
+  .carta:nth-child(2) .arte{background:repeating-linear-gradient(45deg,#000 0 2px,transparent 2px 9px);border-color:#000}
+  .carta:nth-child(2) small{color:#FFD9D5}
+  .carta:nth-child(3){left:48%;top:44px;transform:rotate(10deg)}
+  .carta:nth-child(3) .arte{background:repeating-linear-gradient(-45deg,var(--hueso) 0 1px,transparent 1px 8px)}
+  @media (max-width:880px){.juego{grid-template-columns:1fr}.mazo{height:310px}.carta{width:150px;height:220px}}
+
+  /* ---------- Botones ---------- */
+  .boton{display:inline-block;font:700 15px var(--sans);background:var(--rojo);color:#fff;border:2px solid var(--rojo);padding:13px 24px;text-decoration:none;cursor:pointer}
+  .boton:hover{background:transparent;color:var(--hueso)}
+  .boton.linea{background:transparent;color:var(--hueso);border-color:var(--hueso)}
+  .boton.linea:hover{background:var(--hueso);color:var(--negro)}
+
+  /* ---------- Servicios ---------- */
+  .servicios{display:grid;grid-template-columns:repeat(2,1fr);border-top:2px solid var(--rojo)}
+  .servicio{padding:32px 0 36px;border-bottom:1px solid var(--linea)}
+  .servicio:nth-child(odd){padding-right:44px;border-right:1px solid var(--linea)}
+  .servicio:nth-child(even){padding-left:44px}
+  .servicio h3{font-weight:800;font-size:24px;line-height:1.15;margin-bottom:10px}
+  .servicio p{color:#CFCBC4;max-width:46ch}
+  @media (max-width:880px){.servicios{grid-template-columns:1fr}.servicio:nth-child(n){padding:26px 0;border-right:none}}
+  .cta-servicios{margin-top:44px}
+
+  /* ---------- Qué estuve descubriendo ---------- */
+  .descubriendo{background:var(--carbon);border-top:1px solid var(--linea)}
+  .guia{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:44px}
+  .guia li{border:1px solid var(--linea);padding:14px 16px;font-size:14px;line-height:1.4;color:#CFCBC4}
+  .guia .emo{display:block;font-size:26px;margin-bottom:6px}
+  .guia b{display:block;color:var(--hueso);font-weight:800;font-size:15px}
+  @media (max-width:880px){.guia{grid-template-columns:1fr 1fr}}
+  .filtros{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+  .filtros button{font:600 14px var(--sans);background:transparent;color:var(--hueso);border:1px solid #555;padding:8px 16px;cursor:pointer}
+  .filtros button[aria-pressed="true"]{background:var(--rojo);border-color:var(--rojo);color:#fff}
+  .meses{display:flex;gap:4px;overflow-x:auto;border-bottom:2px solid var(--rojo);margin-bottom:22px;scrollbar-width:thin}
+  .meses button{flex:0 0 auto;font:800 15px var(--sans);text-transform:uppercase;letter-spacing:-.01em;background:transparent;color:var(--gris);border:none;padding:12px 16px;cursor:pointer}
+  .meses button:hover{color:var(--hueso)}
+  .meses button[aria-selected="true"]{background:var(--rojo);color:#fff}
+  .mes{font-weight:900;text-transform:uppercase;font-size:28px;letter-spacing:-.02em;margin:36px 0 6px;padding-bottom:10px;border-bottom:2px solid var(--rojo)}
+  .mes:first-child{margin-top:0}
+  .items{list-style:none}
+  .item{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--linea)}
+  .item .nota{font-size:32px;line-height:1}
+  .item .nota.sin{font:600 12px var(--sans);color:var(--gris);border:1px dashed #555;width:44px;height:44px;display:grid;place-items:center;text-align:center;line-height:1.1}
+  .item .tipo{font-size:13px;font-weight:600;color:var(--rojo)}
+  .item h3{font-weight:800;font-size:21px;line-height:1.25}
+  .item h3 small{font-weight:500;font-size:15px;color:var(--gris)}
+  .item p{font-size:15px;color:#CFCBC4;margin-top:4px;max-width:66ch}
+  .vacio{color:var(--gris);padding:20px 0}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .item .num-item{color:var(--gris);font-weight:500}
+  .item .meta{font-size:14px;color:var(--gris);margin-top:2px}
+  .item details{margin-top:10px}
+  .item summary{cursor:pointer;font-weight:700;font-size:14px;color:var(--rojo);list-style:none;display:inline-block;border-bottom:1px solid var(--rojo)}
+  .item summary::-webkit-details-marker{display:none}
+  .item details[open] summary{margin-bottom:6px}
+  .item details p{font-size:16px;line-height:1.7;margin-top:12px;max-width:68ch;color:#DDD9D2}
+
+  /* ---------- Sobre mí ---------- */
+  .sobre .envoltura{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:64px;align-items:center}
+  .retrato{position:relative}
+  .retrato img{width:100%;aspect-ratio:1/1;object-fit:cover;filter:grayscale(1) contrast(1.08)}
+  .retrato::after{content:"";position:absolute;inset:0;background:var(--rojo);mix-blend-mode:multiply;opacity:.55}
+  .sobre p{max-width:58ch;color:#DDD9D2}
+  .sobre p+p{margin-top:16px}
+  .premios-t{font-weight:800;font-size:18px;margin:30px 0 10px}
+  .premios{list-style:none;border-top:2px solid var(--rojo)}
+  .premios li{padding:12px 0;border-bottom:1px solid var(--linea);color:#DDD9D2;max-width:62ch;font-size:15px}
+  .lista-premios li{display:grid;grid-template-columns:52px 1fr;gap:14px}
+  .lista-premios .anio{font-weight:800;color:var(--rojo)}
+  .premios a{color:var(--hueso);font-weight:600}
+  .sobre .envoltura{align-items:start}
+  @media (max-width:880px){.sobre .envoltura{grid-template-columns:1fr;gap:40px}}
+
+  /* ---------- Contacto ---------- */
+  .contacto{background:var(--rojo);color:#fff}
+  .contacto .slug{color:#000}
+  .contacto .intro{color:#fff}
+  .mail{font-weight:800;font-size:clamp(22px,4.4vw,54px);word-break:break-all;line-height:1.1;margin:-24px 0 28px;letter-spacing:-.02em}
+  .contacto .boton{background:#000;border-color:#000}
+  .contacto .boton:hover{background:transparent;color:#fff;border-color:#fff}
+  .copiado{margin-left:14px;font-size:15px;font-weight:600}
+  .redes{display:flex;flex-wrap:wrap;gap:12px 30px;list-style:none;margin-top:48px;font-weight:600}
+  .redes a{text-decoration:none;border-bottom:2px solid rgba(0,0,0,.4)}
+  .redes a:hover{border-bottom-color:#000}
+  .pie{background:#000;color:var(--gris);font-size:14px;padding:28px 0}
+  .pie .envoltura{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .pie b{font-family:var(--guion);color:var(--hueso);text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <div class="envoltura">
+    <a class="firma" href="#inicio">Gonzalo <i>Palomeque</i></a>
+    <button class="boton-menu" aria-expanded="false" aria-controls="menu">Menú</button>
+    <ul class="menu" id="menu">
+      <li><a href="#obra">Obra</a></li>
+      <li><a href="#desarrollo">En desarrollo</a></li>
+      <li><a href="#juegos">Juegos</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#descubriendo">Descubriendo</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- PORTADA -->
+<section class="portada" id="inicio">
+  <div class="envoltura">
+    <h1 class="nombre"><span>Gonzalo</span><span>Palomeque</span></h1>
+    <div>
+      <p class="bajada">Guionista y realizador audiovisual en Montevideo.</p>
+      <p class="bajada-sec">Escribo cine, cómic, novela y juegos. También escribo por encargo.</p>
+      <p style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
+        <a class="boton" href="#obra">Ver mi obra</a>
+        <a class="boton linea" href="#contacto">Contactame</a>
+      </p>
+    </div>
+    <div class="pagina" aria-label="Escena de presentación">
+      <span class="num">1.</span>
+      <p class="escena"><mark>EXT. RAMBLA DE MONTEVIDEO – ATARDECER</mark></p>
+      <p class="accion" id="maquina">Un hombre camina frente al mar con un cuaderno abierto. Anota algo, lo tacha, lo vuelve a escribir.</p>
+      <p class="personaje">Gonzalo</p>
+      <p class="acotacion">(sin levantar la vista)</p>
+      <p class="dialogo">Tengo una historia. Bueno, tengo varias.</p>
+      <p class="transicion">Corte a:</p>
+    </div>
+  </div>
+</section>
+
+<!-- OBRA REALIZADA -->
+<section class="seccion obra" id="obra">
+  <div class="envoltura">
+    <p class="slug">INT. SALA DE PROYECCIÓN – NOCHE</p>
+    <h2 class="titulo">Obra realizada</h2>
+    <p class="intro">Cortometrajes que escribí y llevé a la pantalla. Tocá un afiche para ver las imágenes.</p>
+    <div class="carteles">
+      <button class="cartel" data-corto="disonancia">
+        <div class="marco"><img src="img/disonancia-poster.jpg" alt="Afiche de Disonancia"></div>
+        <h3>Disonancia</h3><p>Cortometraje. <span class="ver">Ver ficha</span></p>
+      </button>
+      <button class="cartel" data-corto="hojeos">
+        <div class="marco"><img src="img/hojeos-poster.jpg" alt="Afiche de Hojeos"></div>
+        <h3>Hojeos</h3><p>Cortometraje premiado. <span class="ver">Ver ficha</span></p>
+      </button>
+      <button class="cartel" data-corto="pulseada">
+        <div class="marco"><img src="img/pulseada-poster.jpg" alt="Afiche de Pulseada"></div>
+        <h3>Pulseada</h3><p>Cortometraje. <span class="ver">Ver ficha</span></p>
+      </button>
+      <button class="cartel" data-corto="luna">
+        <div class="marco"><img src="img/luna-4.jpg" alt="Fotograma de Gracias, Luna" style="object-position:62% center"><div class="sin-afiche"><b>Gracias,<br>Luna</b></div></div>
+        <h3>Gracias, Luna</h3><p>Cortometraje. <span class="ver">Ver ficha</span></p>
+      </button>
+      <button class="cartel" data-corto="solapero">
+        <div class="marco"><img src="img/solapero-poster.jpg" alt="Afiche de Solapero"></div>
+        <h3>Solapero</h3><p>Cortometraje. <span class="ver">Ver ficha</span></p>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Ficha del corto -->
+<div class="ficha" id="ficha" role="dialog" aria-modal="true" aria-labelledby="ficha-titulo">
+  <div class="caja">
+    <button class="cerrar" id="cerrar">Cerrar</button>
+    <p class="slug">FICHA TÉCNICA</p>
+    <h3 id="ficha-titulo"></h3>
+    <p class="datos" id="ficha-datos"></p>
+    <div class="pantalla"><img id="ficha-img" alt=""></div>
+    <div class="miniaturas" id="ficha-mini"></div>
+    <div class="ficha-texto">
+      <p class="sinopsis" id="ficha-sinopsis"></p>
+      <p class="nota-ficha" id="ficha-nota"></p>
+      <ul class="premios ficha-premios" id="ficha-premios"></ul>
+      <p id="ficha-enlace"></p>
+    </div>
+  </div>
+</div>
+
+<!-- EN DESARROLLO -->
+<section class="seccion" id="desarrollo">
+  <div class="envoltura">
+    <p class="slug">INT. ESCRITORIO – DE DÍA</p>
+    <h2 class="titulo">En desarrollo</h2>
+    <p class="intro">Lo que estoy escribiendo ahora. Abierto a productoras, fondos y coproducción.</p>
+    <div class="vinetas">
+      <article class="vineta ancha roja">
+        <div><p class="genero">Largometraje. Drama romántico de época</p><h3>Pienso en ti</h3></div>
+        <p class="pista">Uruguay, 1970. Un pianista vuelve al pueblo que dejó atrás para enterrar a su padre y se reencuentra con el amor que nunca pudo olvidar. Cuando la tormenta amenace con llevarse todo, tendrá que decidir si quedarse es rendirse o, por fin, volver a empezar.</p>
+      </article>
+      <article class="vineta chica trama">
+        <div><p class="genero">Cómic. Fantasía y acción</p><h3>Sombra Dimensional</h3></div>
+        <p class="pista">Julio toca en una banda indie y está a un acorde de que su vida cambie para siempre. Una vieja guitarra eléctrica abre un portal que lo arroja de mundo en mundo, perseguido por alguien que tiene su misma cara.</p>
+      </article>
+      <article class="vineta media">
+        <div><p class="genero">Largometraje. Western rioplatense</p><h3>Tormenta de arena</h3></div>
+        <p class="pista">Frontera uruguaya, 1890. Ramón colgó las armas para vivir en paz con su esposa. Pero su vieja banda vuelve a buscarlo para un último golpe, y esta vez decir que no tiene un precio que ningún hombre debería pagar.</p>
+      </article>
+      <article class="vineta media trama">
+        <div><p class="genero">Novela. Fantasía urbana</p><h3>El portal</h3></div>
+        <p class="pista">En Montevideo, una sombra milenaria encerrada entre dimensiones aprendió a susurrar en los sueños de los vivos. Ricardo, un joven que acaba de llegar solo a la ciudad, está por descubrir que esa oscuridad también lo conoce a él.</p>
+      </article>
+      <article class="vineta chica">
+        <div><p class="genero">Cortometraje. Drama</p><h3>Cierre de círculo</h3></div>
+        <p class="pista">Dana acaba de mudarse con su pareja cuando, entre las cajas, aparece un buzo de su ex. Basta una prenda olvidada para reabrir una historia sin final. ¿Se puede empezar algo nuevo sin despedirse de lo anterior?</p>
+      </article>
+      <article class="vineta chica roja">
+        <div><p class="genero">Serie antológica. Terror</p><h3>Antología de terror</h3></div>
+        <p class="pista">Siete historias, siete pesadillas: un bosque donde no se ve nada, un túnel sin salida, un ritual que sale mal y una casa de la que no se vuelve. Acá el miedo siempre empieza en lo cotidiano.</p>
+      </article>
+      <article class="vineta chica">
+        <div><p class="genero">Juego de cartas. Estrategia</p><h3>Mitología</h3></div>
+        <p class="pista">Dioses, héroes y criaturas de ocho mitologías se enfrentan en un juego de cartas para dos jugadores. Armá tu mazo, generá energía y demostrá qué panteón manda.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- JUEGOS -->
+<section class="seccion juegos" id="juegos">
+  <div class="envoltura juego">
+    <div class="mazo" aria-hidden="true">
+      <div class="carta"><b>Zeus</b><div class="arte"></div><small>Personaje</small></div>
+      <div class="carta"><b>Anubis</b><div class="arte"></div><small>Personaje</small></div>
+      <div class="carta"><b>Odín</b><div class="arte"></div><small>Personaje</small></div>
+    </div>
+    <div>
+      <p class="slug">INT. MESA DE JUEGO – NOCHE</p>
+      <h2 class="titulo">Mitología</h2>
+      <p class="intro" style="margin-bottom:32px">Juego de cartas para dos jugadores con dioses y criaturas de todas las mitologías. Más de 200 cartas de ocho mitologías; cada mazo tiene 35 cartas únicas y los personajes generan la energía con la que se juega.</p>
+      <a class="boton" href="#juegos">Jugar la versión web (próximamente)</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="seccion" id="servicios">
+  <div class="envoltura">
+    <p class="slug">INT. OFICINA – DE DÍA</p>
+    <h2 class="titulo">Servicios</h2>
+    <p class="intro">Si tenés una historia para contar, la escribimos juntos.</p>
+    <div class="servicios">
+      <div class="servicio"><h3>Guion por encargo</h3><p>Largometrajes, cortos y series. También historias de vida: tu familia, tu empresa o tu pueblo contados como una película.</p></div>
+      <div class="servicio"><h3>Desarrollo de proyectos</h3><p>Sinopsis, tratamientos, escaletas, biblias de mundo y carpetas para presentar a fondos y productoras.</p></div>
+      <div class="servicio"><h3>Revisión de guiones</h3><p>Lectura y devolución de tu guion: estructura, personajes, ritmo y diálogos.</p></div>
+      <div class="servicio"><h3>Contenido audiovisual</h3><p>Ideas, guiones y realización de piezas cortas para redes y marcas.</p></div>
+    </div>
+    <p class="cta-servicios"><a class="boton" href="#contacto">Escribime para cotizar</a></p>
+  </div>
+</section>
+
+<!-- QUÉ ESTUVE DESCUBRIENDO -->
+<section class="seccion descubriendo" id="descubriendo">
+  <div class="envoltura">
+    <p class="slug">INT. BUTACA – MADRUGADA</p>
+    <h2 class="titulo">Qué estuve descubriendo</h2>
+    <p class="intro">Lo que vi, leí y escuché cada mes, con mi valoración.</p>
+    <ul class="guia" aria-label="Guía de recomendación">
+      <li><span class="emo">🎖️</span><b>Obra maestra</b>Me encanta, la recontrarrecomiendo.</li>
+      <li><span class="emo">👍</span><b>Está buena</b>Funciona y te animo a verla.</li>
+      <li><span class="emo">😅</span><b>Meh</b>Ni fu ni fa, me deja con gusto a poco.</li>
+      <li><span class="emo">👎</span><b>Mala</b>No la recomiendo, no llega a cumplir.</li>
+      <li><span class="emo">💀</span><b>Pésima</b>Huí de esta.</li>
+    </ul>
+    <div class="meses" id="meses" role="tablist" aria-label="Elegir mes"></div>
+    <div class="filtros" role="group" aria-label="Filtrar por tipo">
+      <button data-filtro="todo" aria-pressed="true">Todo</button>
+      <button data-filtro="Cine" aria-pressed="false">Cine</button>
+      <button data-filtro="Series" aria-pressed="false">Series</button>
+      <button data-filtro="Música" aria-pressed="false">Música</button>
+      <button data-filtro="Juegos" aria-pressed="false">Juegos</button>
+      <button data-filtro="Lectura" aria-pressed="false">Cómics y libros</button>
+    </div>
+    <div id="lista-descubrimientos"></div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section class="seccion sobre" id="sobre-mi">
+  <div class="envoltura">
+    <div class="retrato"><img src="img/perfil.jpg" alt="Gonzalo Palomeque"></div>
+    <div>
+      <p class="slug">EXT. MONTEVIDEO – CONTINUO</p>
+      <h2 class="titulo">Sobre mí</h2>
+      <p>Soy Gonzalo Palomeque, guionista y realizador de Montevideo, licenciado en Comunicación por la Universidad de Montevideo. Me muevo entre el cine, el cómic, la novela y los juegos: lo que me importa es la historia, el formato viene después.</p>
+      <p>En el set trabajé como guionista, director, sonidista y editor. También escribí contenido para marcas y redes como copywriter.</p>
+      <h3 class="premios-t">Reconocimientos</h3>
+      <ul class="premios lista-premios">
+        <li><span class="anio">2022</span><span><b>Mejor Cortometraje Nivel Super Senior</b>, Categoría Internacional Liberty Communications. Festival Ponte los Cortos, Puerto Rico. Por <em>Hojeos</em> (guion y dirección de sonido).</span></li>
+        <li><span class="anio">2021</span><span><b>Fenacies de Oro.</b> Festival Nacional de Cine Estudiantil. Por <em>Hojeos</em>.</span></li>
+        <li><span class="anio">2021</span><span><b>Mejor cortometraje de ficción universitario nacional.</b> Festival Nacional de Cine Estudiantil. Por <em>Hojeos</em>.</span></li>
+        <li><span class="anio">2016</span><span><b>Diploma a la actuación distinguida</b>, CES. Por la búsqueda de asteroides en el Liceo Barros Blancos N.º 2, donde hallamos nuevos asteroides. <a href="https://www.ceibal.edu.uy/es/articulo/el-cielo-es-el-limite" target="_blank" rel="noopener">Ver nota de Ceibal</a></span></li>
+        <li><span class="anio">2015</span><span><b>Póster ganador</b>, Muestra Nacional de Proyectos de Introducción a la Investigación, CES.</span></li>
+        <li><span class="anio">2015</span><span><b>Diploma a la actuación distinguida</b>, CES. Por la búsqueda de asteroides en el Liceo Barros Blancos N.º 2, donde hallamos tres asteroides. <a href="https://www.gub.uy/presidencia/comunicacion/noticias/estudiantes-liceo-barros-blancos-descubrieron-tres-asteroides" target="_blank" rel="noopener">Ver nota de Presidencia</a></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="seccion contacto" id="contacto">
+  <div class="envoltura">
+    <p class="slug">EXT. CUALQUIER LUGAR – AHORA</p>
+    <h2 class="titulo">Contacto</h2>
+    <p class="intro">Para encargos, proyectos o para charlar de cine:</p>
+    <p class="mail" id="mail">Gonzalo.palomeque.mp@gmail.com</p>
+    <button class="boton" id="copiar">Copiar mail</button><span class="copiado" id="copiado" role="status"></span>
+    <ul class="redes">
+      <li><a href="https://www.youtube.com/channel/UCWu_UiSV8sPfs-HL4SYQLSg" target="_blank" rel="noopener">YouTube</a></li>
+      <li><a href="https://www.instagram.com/gonzapalomeque/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://soundcloud.com/gpalomeque" target="_blank" rel="noopener">SoundCloud</a></li>
+      <li><a href="https://www.linkedin.com/in/gonzalopalomeque/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://x.com/MaikelGonzalo" target="_blank" rel="noopener">X / Twitter</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="envoltura">
+    <b>Fundido a negro.</b>
+    <span>© 2026 Gonzalo Palomeque. Montevideo, Uruguay.</span>
+  </div>
+</footer>
+
+<script src="descubrimientos.js"></script>
+<script>
+  // Menú en móvil
+  const botonMenu = document.querySelector('.boton-menu'), menu = document.getElementById('menu');
+  botonMenu.addEventListener('click', () => {
+    const abierto = menu.classList.toggle('abierto');
+    botonMenu.setAttribute('aria-expanded', abierto);
+  });
+  menu.addEventListener('click', e => { if (e.target.tagName === 'A') { menu.classList.remove('abierto'); botonMenu.setAttribute('aria-expanded', false); } });
+
+  // Máquina de escribir en la portada (una sola vez)
+  const reducir = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const p = document.getElementById('maquina');
+  if (!reducir && p) {
+    const texto = p.textContent; p.textContent = '';
+    const cursor = document.createElement('span'); cursor.className = 'cursor'; cursor.innerHTML = '&nbsp;';
+    p.after(cursor);
+    const resto = [...document.querySelectorAll('.pagina .personaje, .pagina .acotacion, .pagina .dialogo, .pagina .transicion')];
+    resto.forEach(el => el.style.visibility = 'hidden');
+    let i = 0;
+    const escribir = () => {
+      if (i <= texto.length) { p.textContent = texto.slice(0, i++); setTimeout(escribir, 26); }
+      else { cursor.remove(); resto.forEach((el, n) => setTimeout(() => el.style.visibility = 'visible', 260 * (n + 1))); }
+    };
+    setTimeout(escribir, 500);
+  }
+
+  // Fichas de los cortos
+  const cortos = {
+    disonancia: { titulo: 'Disonancia', datos: 'Cortometraje de ficción, 2020. Guion: Gonzalo Palomeque.',
+      sinopsis: 'Una chica impulsiva firma un acuerdo con una productora musical para que represente el dúo que tiene con su novio, aun sabiendo que él no estaba de acuerdo. Intentará recomponer su relación, al mismo tiempo que intenta cumplir con las exigencias del contrato. Finalmente, se dará cuenta de que fue un error firmar.',
+      nota: 'Realizado para la materia Producción Cinematográfica.',
+      enlace: 'https://fibabc.abc.es/cortos/disonancia/',
+      fotos: ['disonancia-1','disonancia-2','disonancia-3','disonancia-4'] },
+    hojeos: { titulo: 'Hojeos', datos: 'Cortometraje de ficción, 2021. Guion y dirección de sonido: Gonzalo Palomeque.',
+      sinopsis: 'Una chica tímida e insegura se enamora a primera vista de un grafitero que entra a la cafetería donde trabaja. El chico se vuelve un cliente regular con el que ella interactúa de manera anónima, colgando dibujos en una cartelera del lugar. Ante el riesgo de no volver a verlo, ella deberá sobreponerse al miedo de revelar quién es detrás del tapabocas para que, finalmente, se conozcan.',
+      premios: ['Fenacies de Oro 2021, Festival Nacional de Cine Estudiantil.', 'Mejor cortometraje de ficción universitario nacional 2021, Fenacies.', 'Mejor Cortometraje Nivel Super Senior, Categoría Internacional Liberty Communications, Festival Ponte los Cortos (Puerto Rico), 2022.'],
+      fotos: ['hojeos-1','hojeos-2','hojeos-3','hojeos-4'] },
+    pulseada: { titulo: 'Pulseada', datos: 'Cortometraje experimental, 2020. Dirección: Gonzalo Palomeque.',
+      sinopsis: 'Una joven atormentada por los recuerdos de su pasado de adicción lucha por tomar el control de su vida y de su mente.',
+      nota: 'Realizado para la materia Realización Cinematográfica.',
+      fotos: ['pulseada-1','pulseada-2','pulseada-3','pulseada-4'] },
+    luna: { titulo: 'Gracias, Luna', datos: 'Cortometraje, 2023. Dirección: Gonzalo Palomeque.',
+      sinopsis: '', nota: '', pendiente: true,
+      fotos: ['luna-1','luna-2','luna-3','luna-4'] },
+    solapero: { titulo: 'Solapero', datos: 'Cortometraje de ficción, 2020. Guion: Gonzalo Palomeque.',
+      sinopsis: 'En un rodaje estudiantil, un sonidista entrometido se desubica: mete la caña en el encuadre, trata de ayudar al actor con su papel e interrumpe el video village, hasta que saca de quicio a la directora. Ella le asigna un rol menor en el rodaje.',
+      nota: 'Realizado para la materia Producción Cinematográfica.',
+      fotos: ['solapero-1','solapero-2','solapero-3','solapero-4'] }
+  };
+  const ficha = document.getElementById('ficha'), fImg = document.getElementById('ficha-img'), fMini = document.getElementById('ficha-mini');
+  let disparador = null;
+  function mostrar(foto, titulo) {
+    fImg.src = 'img/' + foto + '.jpg'; fImg.alt = 'Imagen de ' + titulo;
+    fMini.querySelectorAll('button').forEach(b => b.setAttribute('aria-current', b.dataset.foto === foto));
+  }
+  document.querySelectorAll('.cartel').forEach(c => c.addEventListener('click', () => {
+    const d = cortos[c.dataset.corto]; disparador = c;
+    document.getElementById('ficha-titulo').textContent = d.titulo;
+    document.getElementById('ficha-datos').textContent = d.datos;
+    document.getElementById('ficha-sinopsis').innerHTML = d.pendiente ? '<span class="pendiente">Para completar: sinopsis.</span>' : d.sinopsis;
+    document.getElementById('ficha-nota').textContent = d.nota || '';
+    document.getElementById('ficha-premios').innerHTML = (d.premios || []).map(p => `<li>${p}</li>`).join('');
+    document.getElementById('ficha-enlace').innerHTML = d.enlace ? `<a class="boton" href="${d.enlace}" target="_blank" rel="noopener">Ver el cortometraje</a>` : '';
+    fMini.innerHTML = d.fotos.length > 1 ? d.fotos.map(f => `<button data-foto="${f}" aria-label="Ver imagen"><img src="img/${f}.jpg" alt=""></button>`).join('') : '';
+    fMini.querySelectorAll('button').forEach(b => b.addEventListener('click', () => mostrar(b.dataset.foto, d.titulo)));
+    mostrar(d.fotos[0], d.titulo);
+    ficha.classList.add('abierta'); document.body.style.overflow = 'hidden';
+    document.getElementById('cerrar').focus();
+  }));
+  function cerrarFicha() { ficha.classList.remove('abierta'); document.body.style.overflow = ''; if (disparador) disparador.focus(); }
+  document.getElementById('cerrar').addEventListener('click', cerrarFicha);
+  ficha.addEventListener('click', e => { if (e.target === ficha) cerrarFicha(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && ficha.classList.contains('abierta')) cerrarFicha(); });
+
+
+  // ===== Qué estuve descubriendo (los datos están en descubrimientos.js) =====
+  const descubrimientos = window.DESCUBRIMIENTOS || [];
+  const emojis = { 5: ['🎖️','Obra maestra'], 4: ['👍','Está buena'], 3: ['😅','Meh'], 2: ['👎','Mala'], 1: ['💀','Pésima'] };
+  const lista = document.getElementById('lista-descubrimientos');
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const coincide = (i, f) => f === 'todo' || i.tipo === f || (f === 'Lectura' && (i.tipo === 'Cómics' || i.tipo === 'Libros'));
+  let mesActual = 0, filtroActual = 'todo';
+  const barraMeses = document.getElementById('meses');
+  barraMeses.innerHTML = descubrimientos.map((m, k) => `<button role="tab" data-mes="${k}" aria-selected="${k === 0}">${esc(m.mes.replace(/ \d{4}$/, ''))}<span class="sr"> ${esc(m.mes.slice(-4))}</span></button>`).join('');
+  barraMeses.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    mesActual = +b.dataset.mes;
+    barraMeses.querySelectorAll('button').forEach(x => x.setAttribute('aria-selected', x === b));
+    pintar(filtroActual);
+  }));
+  function pintar(filtro) {
+    filtroActual = filtro;
+    const m = descubrimientos[mesActual];
+    if (!m) { lista.innerHTML = ''; return; }
+    const its = m.items.filter(i => coincide(i, filtro));
+    lista.innerHTML = its.length ? `<h3 class="mes">${esc(m.mes)}</h3><ul class="items">` + its.map(i => {
+      const e = emojis[i.nota];
+      const nota = e ? `<span class="nota" role="img" aria-label="${e[1]}" title="${e[1]}">${e[0]}</span>` : `<span class="nota sin">Sin valorar</span>`;
+      const meta = [i.autor, i.anio].filter(Boolean).map(esc).join(', ');
+      const resena = (i.texto && i.texto.length)
+        ? `<details><summary>Leer reseña</summary>${i.texto.map(p => `<p>${esc(p)}</p>`).join('')}</details>` : '';
+      return `<li class="item">${nota}<div><p class="tipo">${esc(i.tipo)}${i.n ? ` <span class="num-item">#${i.n}</span>` : ''}</p><h3>${esc(i.titulo)}</h3>${meta ? `<p class="meta">${meta}</p>` : ''}${resena}</div></li>`;
+    }).join('') + '</ul>' : `<p class="vacio">En ${esc(m.mes.toLowerCase())} no hay nada de este tipo.</p>`;
+  }
+  document.querySelectorAll('.filtros button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.filtros button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    pintar(b.dataset.filtro);
+  }));
+  pintar('todo');
+
+  // Copiar mail
+  document.getElementById('copiar').addEventListener('click', async () => {
+    const aviso = document.getElementById('copiado');
+    try { await navigator.clipboard.writeText(document.getElementById('mail').textContent.trim()); aviso.textContent = 'Mail copiado'; }
+    catch { aviso.textContent = 'Seleccioná el mail y copialo a mano'; }
+  });
+</script>
+</body>
+</html>
